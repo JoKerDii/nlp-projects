@@ -1,0 +1,3 @@
+Huggingface/datasets/*
+Huggingface/huggingface/*
+.DS_Store
