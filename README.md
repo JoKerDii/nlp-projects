@@ -2,6 +2,8 @@
 
 ## 1 IMDB Sentiment Analysis with ELMo
 
+[Project Notebook](https://nbviewer.org/github/JoKerDii/nlp-projects/blob/main/ELMo_from_scratch/IMDB_Sentiment_Analysis_with_ELMo.ipynb)
+
 ### Overview
 
 For this sentiment analysis task we used IMDB dataset which is publicly available [here](http://ai.stanford.edu/~amaas/data/sentiment/). We aimed to classify movie reviews as positive and negative. The work can be split into three parts:
@@ -34,6 +36,8 @@ The ELMo embedding model's performance is disappointing. One reason is that we h
 
 ## 2 Text Binary Classification based on BERT
 
+[Project Notebook](https://nbviewer.org/github/JoKerDii/nlp-projects/blob/main/Huggingface/text-binary-classification-based-on-BERT.ipynb)
+
 ### Overview
 
 Stanford Sentiment Treebank (SST) is a crucial dataset for testing an NLP model's capability on predicting the sentiment of movie reviews.  
@@ -54,6 +58,8 @@ Due to the limitation of computational resources, we only used 12000 training da
 
 ## 3 Text Multiclass Classification based on BERT
 
+[Project Notebook](https://nbviewer.org/github/JoKerDii/nlp-projects/blob/main/Huggingface/text-multiclass-classification-based-on-BERT.ipynb)
+
 ### Overview
 
 The Toxic Comments dataset here is from wiki corpus dataset which was rated by human raters for toxicity. The corpus contains 63M comments from discussions relating to user pages and articles dating from 2004-2015. The comments were tagged in six categories: toxic, severe toxic, obscene, threat, insult, and identity hate.
@@ -65,6 +71,8 @@ The goal is to identify and classify toxic online comments by fine-tuning a pret
 The accuracy on test set is **0.8694**.  By searching f1 score threshold, we find the best macro threshold value 0.73 such that the f1 score is the highest. The improved accuracy on test set is **0.8837**.
 
 ## 4 Sentence Similarity Identification based on ALBERT
+
+[Project Notebook](https://nbviewer.org/github/JoKerDii/nlp-projects/blob/main/Huggingface/sentence_similarity_based_on_ALBERT.ipynb)
 
 ### Overview
 
