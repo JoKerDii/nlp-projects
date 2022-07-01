@@ -2,7 +2,7 @@
 
 ## 1. IMDB Sentiment Analysis with ELMo
 
-### Goal
+### Overview
 
 For this sentiment analysis task we used IMDB dataset which is publicly available [here](http://ai.stanford.edu/~amaas/data/sentiment/). We aimed to classify movie reviews as positive and negative. The work can be split into three parts:
 
@@ -10,7 +10,17 @@ For this sentiment analysis task we used IMDB dataset which is publicly availabl
 2. Use the generated ELMo embeddings to performn sentiment analysis on IMDB dataset.
 3. Evaluate the model with trained ELMo embedding with other two models without trained embedding and with a word2vec embedding.
 
+### BERT Model
+
+We defined an ELMo-like language model using bi-directional LSTMs and residual connections without the character CNN. We used the word2vec embeddings instead of the character representations of the CNN. The structure of ELMo-like model is as follows.
+
+![](https://storage.googleapis.com/public_colab_images/nlp/elmo/forward_backward.png) 
+
+We built another model called `Toy_ELMo` to obtain the embeddings of the model. The embeddings are trained sufficiently and then used for sentiment analysis.
+
 ### Results
+
+The BERT model built from scratch is successful and works normally. After training on a not very large dataset, compared to the baseline model with embedding from scratch and the model with word2vec embeddings, the accuracy of the model with ELMo embeddings is only about 0.5 lower.
 
 |          | Model with embeddings from scratch | Model with word2vec embeddings | Model with trained ELMo embeddings |
 | -------- | ---------------------------------- | ------------------------------ | ---------------------------------- |
