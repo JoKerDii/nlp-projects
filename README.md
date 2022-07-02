@@ -12,7 +12,7 @@ For this sentiment analysis task we used IMDB dataset which is publicly availabl
 2. Use the generated ELMo embeddings to performn sentiment analysis on IMDB dataset.
 3. Evaluate the model with trained ELMo embedding with other two models without trained embedding and with a word2vec embedding.
 
-### BERT Model
+### ELMo-like Model
 
 We defined an ELMo-like language model using bi-directional LSTMs and residual connections without the character CNN. We used the word2vec embeddings instead of the character representations of the CNN. The structure of ELMo-like model is as follows.
 
@@ -22,7 +22,7 @@ We built another model called `Toy_ELMo` to obtain the embeddings of the model. 
 
 ### Results
 
-The BERT model built from scratch is successful and works normally. After training on a not very large dataset, compared to the baseline model with embedding from scratch and the model with word2vec embeddings, the accuracy of the model with ELMo embeddings is only about 0.5 lower.
+The Toy ELMo model built from scratch is successful and works normally. After training on a not very large dataset, compared to the baseline model with embedding from scratch and the model with word2vec embeddings, the accuracy of the model with ELMo embeddings is only about 0.5 lower.
 
 |          | Model with embeddings from scratch | Model with word2vec embeddings | Model with trained ELMo embeddings |
 | -------- | ---------------------------------- | ------------------------------ | ---------------------------------- |
