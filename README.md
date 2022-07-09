@@ -64,7 +64,7 @@ Due to the limitation of computational resources, we only used 12000 training da
 
 The Toxic Comments dataset here is from wiki corpus dataset which was rated by human raters for toxicity. The corpus contains 63M comments from discussions relating to user pages and articles dating from 2004-2015. The comments were tagged in six categories: toxic, severe toxic, obscene, threat, insult, and identity hate.
 
-The goal is to identify and classify toxic online comments by fine-tuning a pretrained BERT model.
+The goal is to classify toxic online comments by fine-tuning a pretrained BERT model.
 
 ### Result
 
